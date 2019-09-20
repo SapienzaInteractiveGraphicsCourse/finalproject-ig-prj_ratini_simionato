@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aladdin - Main Menu</title>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Aladin" />
+    <style>
+        body {
+            background-color: #000000;
+        }
+
+        button { display: table;
+                background-color: black;
+                color: goldenrod;
+                padding: 7px 15px 8px 15px;
+                border: 2px solid goldenrod;
+                width: 200px;
+                height: 50px;
+                font-family: "Aladin";
+                font-size: 16px;
+                font-weight: bold;
+                cursor: pointer; opacity: 0.9; }
+        button:hover { opacity: 1; }
+        button:active { color: white !important; background-color: #000000 !important; }
+
+        .separator1{
+            margin-top : 50px;
+            margin-bottom: 250px;
+        }
+        .separator2{
+            margin-top : 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div align="center">
+    <div class="separator1" align="center">
+        <img src="imgs/logo.jpeg" alt="Logo">
+    </div>
+    <div align="center">
+        <div class="separator2"><button onclick="window.location.href = 'L1/L1.html';">Main Story</button></div>
+        <div class="separator2"><button onclick="window.location.href = 'menu/Levels.html';">Single Level</button></div>
+        <div class="separator2"><button onclick="window.location.href = 'menu/Commands.html';">Commands</button></div>
+    </div>
+</div>
+</body>
+</html>
