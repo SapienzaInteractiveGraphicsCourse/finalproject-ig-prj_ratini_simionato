@@ -1276,8 +1276,8 @@ var createL2 = function () {
     var music = new BABYLON.Sound("Music", "../musics/second.mp3", scene,
         function () {
             music.play();
-        }
-    );
+        },
+    { loop: true });
 
     BABYLON.SceneLoader.Append("", "../L2/L2.babylon", scene, function (scene) {
         // Define the controller

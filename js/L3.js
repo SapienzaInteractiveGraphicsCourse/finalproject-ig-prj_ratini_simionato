@@ -620,7 +620,7 @@ var createL3 = function () {
         function () {
             music.play();
         }
-    );
+    ,  { loop: true });
 
     BABYLON.SceneLoader.Append("", "../L3/L3.babylon", scene, function (scene) {
 
