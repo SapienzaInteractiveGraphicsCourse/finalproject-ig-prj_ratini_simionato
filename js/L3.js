@@ -57,9 +57,13 @@ function animation_manager(char){
 
 
 }
-function triggers_manager(char, last_circle) {
-    if(char.intersectsMesh(last_circle, false)){
-        window.location = "../index.html";
+function triggers_manager(char, last_circle, spawn_point, MAT_Circles, circles) {
+    if(char.intersectsMesh(last_circle, false)) {
+        if (char._gameParameters["curCircle"] == 18){
+            window.location = "../index.html";
+        } else {
+            reset(char, spawn_point, MAT_Circles, circles);
+        }
     }
 }
 function reset(char, spawn_point, MAT_Circles, circles){
@@ -763,7 +767,7 @@ var createL3 = function () {
 
         scene.registerBeforeRender(function () {
             OBJ_Controller.moveWithCollisions(new BABYLON.Vector3( OBJ_Controller._gameParameters["fw"] + OBJ_Controller._gameParameters["rt"] , OBJ_Controller._gameParameters["up"], OBJ_Controller._gameParameters["bw"] + OBJ_Controller._gameParameters["lt"]));
-            triggers_manager(OBJ_Controller, last_circle);
+            triggers_manager(OBJ_Controller, last_circle, spawn_point, MAT_Circles, circle_objects);
             triggers_circles(OBJ_Controller, circle_objects,MAT_Circles, MAT_wireframe, spawn_point);
             animation_manager(OBJ_Controller);
             state_manager(OBJ_Controller, ground_objects, scene);
