@@ -9,7 +9,7 @@ A 3D Platform game developed with the Babylon.js framework.
 * Giada Simionato
 
 # DOCUMENTATION
-Please see the [DOCUMENTATION]() file for details on the implementation and the user guide.
+Please see the [DOCUMENTATION](./documentation.pdf) file for details on the implementation and the user guide.
 
 # DEMO
 The game can be played at this [LINK](https://sapienzainteractivegraphicscourse.github.io/finalproject-ig-prj_ratini_simionato/) .
